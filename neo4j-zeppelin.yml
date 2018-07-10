@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    neo4j:
+        image: neo4j
+        networks:
+            - host
+        ports:
+            - 7474:7474
+            - 7687:7687
+        environment:
+            - NEO4J_AUTH=neo4j/zeppelin
+    zeppelin:
+        build:
+            context: .
+        image: santand84/zeppelin:0.8.0
+        networks:
+            - host
+        ports:
+            - 8080:8080
+        volumes:
+            - C:/Users/a.santurbano/Desktop/zep-neo/zeppelin/notebook:/zeppelin/notebook
+            - C:/Users/a.santurbano/Desktop/zep-neo/zeppelin/conf:/zeppelin/conf
+networks:
+    host:

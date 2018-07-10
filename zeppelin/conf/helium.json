@@ -1,0 +1,9 @@
+{
+  "enabled": {
+    "volume-leaflet": "volume-leaflet@1.0.3"
+  },
+  "packageConfig": {},
+  "bundleDisplayOrder": [
+    "volume-leaflet"
+  ]
+}
