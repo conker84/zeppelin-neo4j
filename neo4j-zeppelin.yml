@@ -19,7 +19,7 @@ services:
         ports:
             - 8080:8080
         volumes:
-            - C:/Users/a.santurbano/Desktop/zep-neo/zeppelin/notebook:/zeppelin/notebook
-            - C:/Users/a.santurbano/Desktop/zep-neo/zeppelin/conf:/zeppelin/conf
+            - ./zeppelin/notebook:/zeppelin/notebook
+            - ./zeppelin/conf:/zeppelin/conf
 networks:
     host:
